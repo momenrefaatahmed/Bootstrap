@@ -1,0 +1,390 @@
+:root {
+  --main-color: #3fbf9d;
+  --section-color: #2e3f4f;
+  --footer-color: #1b262e;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-heading .custom {
+  width: 100%;
+}
+
+.main-heading .custom .line {
+  width: 120px;
+  height: 5px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.main-heading .custom .star {
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+/* Start NavBar */
+.navbar {
+  background-color: var(--section-color);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.navbar .hading {
+  font-size: 1.75rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 787px) {
+  .navbar .navbar-nav  .portfolo  {
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav  .portfolo  {
+    margin-top: 1rem !important;
+  }
+}
+.navbar .active {
+  background-color: var(--main-color);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.navbar .active:hover {
+  color: white !important;
+}
+
+.navbar button:focus {
+  box-shadow: none;
+}
+/* End NavBar */
+
+/* Start Landing  */
+.landing {
+  height: calc(100vh - 130px);
+  background-color: var(--main-color);
+}
+
+.landing img {
+  width: 250px;
+}
+
+.landing .custom .line {
+  background-color: white;
+}
+
+.landing .custom .star {
+  color: white;
+}
+/* End Landing  */
+
+/* Start Portofolio */
+.section-portfolio .main-heading {
+  color: var(--section-color);
+}
+
+.section-portfolio .custom .line {
+  background: var(--section-color);
+}
+/* End Portofolio */
+/* Start section-portfolio */
+
+.section-portfolio .color {
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.section-portfolio .color .icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.section-portfolio .image {
+  cursor: pointer;
+}
+
+  .section-portfolio .image svg{
+    opacity: 0;
+  }
+
+.section-portfolio .image:hover .color {
+  opacity: 0.7;
+}
+
+.section-portfolio .image:hover svg {
+  opacity: 1;
+}
+
+/* End section-portfolio */
+
+/* Start section-about */
+.section-about {
+  background-color: var(--main-color);
+}
+
+.section-about .main-heading {
+  color: white;
+}
+.section-about .main-heading .line {
+  background-color: white;
+}
+
+.section-about .row p {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.section-about .download {
+  width: fit-content;
+  margin: auto;
+}
+
+.section-about .download a {
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.section-about .download:hover a {
+  background-color: white;
+  border: none;
+  color: black;
+  border: 2px solid white;
+}
+  /* End section-about */
+
+/* Start section-contact */
+.section-contact .main-heading .line {
+  background-color: var(--footer-color);
+}
+/* End section-contact */
+
+/* Start section-contact */
+.form-floating > input {
+  font-size: 1.25rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+
+.form-floating > input:focus {
+  box-shadow: none;
+  border-color: var(--main-color);
+}
+
+.form-floating > textarea {
+  height: 10rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ddd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+} 
+.form-floating textarea > label {
+  font-size: 1.5rem;
+}
+
+.form-floating > textarea:focus {
+  box-shadow: none;
+  border-color: var(--main-color);
+}
+
+.form-control:focus .form {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--main-color);
+}
+
+form input:focus{
+  box-shadow: none !important;
+}
+
+form .required-name,
+form .required-email,
+form .email,
+.form .required-phone,
+.form .phone {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+/* End section-contact */
+/* Start Footer  */
+footer {
+  background-color: var(--section-color);
+}
+
+footer .btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .btn-social:hover {
+  background-color: white;
+  color: var(--footer-color);
+  border-color: white;
+}
+footer span a {
+  color: var(--main-color);
+}
+.Copyright {
+  color: white;
+  background-color: var(--footer-color);
+}
+/* End Footer  */
+.up {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--footer-color);
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  display: none;
+}
+
+.up a {
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Start Modal 1 */
+.modal .main-heading .line {
+  background-color: var(--footer-color);
+}
+
+.modal .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+
+.modal .close {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.modal .close button {
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+.modal p {
+  font-size: 13px;
+}
+
+.modal .footer button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.modal .footer button:hover {
+  background-color: #16a085;
+}
+/* End Modal 1 */
